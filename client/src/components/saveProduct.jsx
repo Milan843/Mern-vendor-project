@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Axios from 'axios'
 import Cookie from 'js-cookie';
 
-
+//save the Product selected by the User to the db
 export class saveProduct extends Component {
     handleShow=async()=>{
         const token= Cookie.get('token');
@@ -17,13 +17,14 @@ export class saveProduct extends Component {
             }
           });
         }
-        showitems = () => {
+    showitems = () => {
             return this.props.Itemlist.map(item => {
               return <li key={item}>{item}</li>;
             });
           };
+   
 
-
+//render the product name and the selected items
     render() {
         return (
             <React.Fragment>

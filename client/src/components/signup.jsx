@@ -2,6 +2,9 @@
 import React, { Component } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
 import Axios from "axios"
+
+//The signup component
+//takes the name,email and password from the User
 class FormPage extends Component{
       state={name:"",email:"",password:"",resfromserver:""}
 
@@ -10,12 +13,13 @@ class FormPage extends Component{
         e.preventDefault();
         if (this.state.password && this.state.email && this.state.name) {
 
+          //checks if password length is greter than 8
         if (this.state.password.length < 8) {
           return this.setState({
             resfromserver: "short password!!! length must be greater than 8"
           });
         }
-      
+      //hit request to the '/user' on backend
         const response=await Axios.post("/user",{
             name:this.state.name,
             email:this.state.email,

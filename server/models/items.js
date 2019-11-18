@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+//Schema of the items store
 const Items=mongoose.Schema;
 
 const ItemSchema=new Items({
@@ -11,6 +12,7 @@ const ItemSchema=new Items({
 
 const items=mongoose.model('Items', ItemSchema)
 
+//Seeding
 fun =async ()=>{
     const number = await items.countDocuments();
     if(number<1){

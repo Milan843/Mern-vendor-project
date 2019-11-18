@@ -3,7 +3,8 @@ let User=require('../models/model')
 const router=express.Router()
 const jwt = require("jwt-simple");
 
-
+//The signin router
+//checks user is valid or not and update by a token
 router.post('/signin',async (req,res)=>{
     console.log('in signin')
     const userEmail=req.body.email

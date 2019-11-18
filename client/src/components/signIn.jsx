@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
 import Axios from "axios";
-import {Link} from 'react-router-dom';
 import Cookie from "js-cookie"
+
+//The signin component
+//takes the email and password then hit request at backend
 class FormPage extends Component{
   state = { email: "", password: "" };
   onFormSubmit = async prvt => {
@@ -13,6 +15,7 @@ class FormPage extends Component{
     password: this.state.password
     });
     console.log(response.data.token)
+    //set the token in the cookies
     await Cookie.set("token",response.data.token)
 
     console.log(Cookie.get('token'))

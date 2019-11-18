@@ -1,4 +1,5 @@
 const mongoose=require('mongoose');
+//Schema of the User store
 let Schema=mongoose.Schema;
 
 let userSchema= new Schema({

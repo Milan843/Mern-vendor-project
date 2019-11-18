@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Product from "./productName";
 import Item from "./items";
-import Preview from "./preview";
 import Save from "./saveProduct";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
@@ -9,6 +8,10 @@ import "mdbreact/dist/css/mdb.css";
 import '../components/css/index.css';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
 
+//Stepper component where we are given 3 steps
+//first step is to select product
+//second step is to choice items
+//third step is to preview and save the product
 class StepperForm extends Component {
   state = {
     title: "Select Product Name",

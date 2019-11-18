@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+//The final list of product displayed here
 export class preview extends Component {
     render() {
         return (

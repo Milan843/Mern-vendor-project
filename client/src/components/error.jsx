@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+//Error page when client go to different url
 export class error extends Component {
     render() {
         return (

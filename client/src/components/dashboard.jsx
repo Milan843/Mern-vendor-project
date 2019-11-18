@@ -4,6 +4,8 @@ import Cookies from 'js-cookie';
 import Axios from 'axios';
 import UserItems from './useritems'
 
+//dashboard where there is a logout button
+//the stepper and the useritem selected by the user
 class dashBoard extends Component{
 handleLogout=async (e)=>{
     const token=Cookies.get("token")

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+//This component takes the product name from the User
 export class productName extends Component {
     render() {
         return (

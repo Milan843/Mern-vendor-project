@@ -3,7 +3,8 @@ import { NativeSelect } from '@material-ui/core';
 import SignUp from './signup'
 import SignIn from './signIn'
 
-
+//The home page where signup and signin buttons appear
+//Only return the option which is being clicked
 export class first extends Component {
     state={counter:<SignUp />}
 
