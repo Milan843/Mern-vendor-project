@@ -3,8 +3,7 @@ import ReactDOM from "react-dom";
 import NavBar from "./components/navbar";
 import DashBoard from "./components/dashboard";
 import Edit from "./components/edit";
-
-import Error from "./components/error";
+import "../src/css/index.css";
 import First from "./components/first";
 import { BrowserRouter as Router, Redirect } from "react-router-dom";
 import Route from "react-router-dom/Route";
@@ -28,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="bg">
           <NavBar />
           <Route path="/" exact strict component={First} />
           <ProtectedRoute path="/dashboard" exact component={DashBoard} />
