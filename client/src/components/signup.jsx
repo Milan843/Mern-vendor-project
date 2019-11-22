@@ -38,8 +38,8 @@ class FormPage extends Component{
         <MDBCol md="6">
           <form onSubmit={this.onFormSubmit}>
             <p className="h4 text-center mb-4">Sign up</p>
-            <label htmlFor="defaultFormRegisterNameEx" className="grey-text">
-              Your name
+            <label htmlFor="defaultFormRegisterNameEx" className="black-text">
+              <h4>Your Name</h4>
             </label>
             <input
               type="text"
@@ -49,8 +49,8 @@ class FormPage extends Component{
 
             />
             <br />
-            <label htmlFor="defaultFormRegisterEmailEx" className="grey-text">
-              Your email
+            <label htmlFor="defaultFormRegisterEmailEx" className="black-text">
+              <h4>Your Email</h4>
             </label>
             <input
               type="email"
@@ -60,23 +60,12 @@ class FormPage extends Component{
 
             />
             <br />
-            {/* <label
-              htmlFor="defaultFormRegisterConfirmEx"
-              className="grey-text"
-            >
-              Confirm your email
-            </label>
-            <input
-              type="email"
-              id="defaultFormRegisterConfirmEx"
-              className="form-control"
-            />
-            <br /> */}
+       
             <label
               htmlFor="defaultFormRegisterPasswordEx"
-              className="grey-text"
+              className="black-text"
             >
-              Your password
+              <h4>Your password</h4>
             </label>
             <input
               type="password"

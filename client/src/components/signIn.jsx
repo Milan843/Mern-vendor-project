@@ -29,8 +29,8 @@ class FormPage extends Component{
         <MDBCol md="6">
           <form onSubmit={this.onFormSubmit} >
             <p className="h4 text-center mb-4">Sign in</p>
-            <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
-              Your email
+            <label htmlFor="defaultFormLoginEmailEx" className="black-text">
+              <h4>Your Email</h4>
             </label>
             <input
               type="email"
@@ -40,8 +40,8 @@ class FormPage extends Component{
 
             />
             <br />
-            <label htmlFor="defaultFormLoginPasswordEx" className="grey-text">
-              Your password
+            <label htmlFor="defaultFormLoginPasswordEx" className="black-text">
+              <h4>Your password</h4>
             </label>
             <input
               type="password"
